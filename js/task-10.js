@@ -23,6 +23,7 @@ function createBoxes(amount) {
 
 function destroyBoxes() {
   boxesEl.innerHTML = "";
+  controlsEl.firstElementChild.value = 0;
 }
 
 // Инициализация
