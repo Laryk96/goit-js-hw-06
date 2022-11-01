@@ -1,7 +1,6 @@
 const form = document.querySelector(".login-form");
 
 form.addEventListener("submit", (event) => {
-  console.log(event);
   event.preventDefault();
 
   const email = event.currentTarget.elements.email.value;
