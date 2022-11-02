@@ -6,16 +6,12 @@ form.addEventListener("submit", (event) => {
   const email = event.currentTarget.elements.email.value;
   const password = event.currentTarget.elements.password.value;
 
-  if (email === "" || password === "") {
-    alert("Заполните все поля формы!");
-  }
-
-  const user = {
-    email,
-    password,
-  };
-
-  console.log(user);
-
-  event.currentTarget.reset();
+  if (email !== "" && password !== "") {
+    const user = {
+      email,
+      password,
+    };
+    console.log(user);
+    event.currentTarget.reset();
+  } else alert("Заполните все поля формы!");
 });

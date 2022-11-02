@@ -2,5 +2,8 @@ const inputEl = document.querySelector("#name-input");
 const outputEl = document.querySelector("#name-output");
 
 inputEl.addEventListener("input", () => {
-  outputEl.textContent = inputEl.value !== "" ? inputEl.value : "Anonymous";
+  const userName = inputEl.value.trim();
+  console.log(userName);
+  console.log(inputEl.value);
+  outputEl.textContent = inputEl.value !== "" ? userName : "Anonymous";
 });
