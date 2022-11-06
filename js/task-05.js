@@ -5,5 +5,5 @@ inputEl.addEventListener("input", () => {
   const userName = inputEl.value.trim();
   console.log(userName);
   console.log(inputEl.value);
-  outputEl.textContent = inputEl.value !== "" ? userName : "Anonymous";
+  outputEl.textContent = userName !== "" ? userName : "Anonymous";
 });
